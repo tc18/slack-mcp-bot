@@ -61,6 +61,7 @@ uv run uvicorn slack_bot:api --port 3000
 
 ngrok http 3000
 ```
+https://dashboard.ngrok.com/
 
 put `ngrok http 3000` url into slack.
 

@@ -19,6 +19,8 @@ handler = SlackRequestHandler(app)
 @app.event("app_mention")
 def handle_mention(event, say, logger):
     # Remove <@BOTID>
+    logger.info(event)
+    print(event)
     text = event["text"].split(">", 1)[-1].strip()
     logger.info(f"Slack input: {text}")
 
